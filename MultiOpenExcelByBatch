@@ -1,0 +1,8 @@
+::將Excel.exe存在的路徑，設定到環境變數中
+set ExcelPath="C:\Program Files\Microsoft Office\Office16\EXCEL.EXE"
+
+::欲平行執行的檔案路徑，請自行修改為自己電腦的路徑
+set ExcelFilePath=C:\Users\*\Desktop\batchtest\
+
+start "Excel" %ExcelPath% /e %ExcelFilePath%ABC.xlsx
+exit
